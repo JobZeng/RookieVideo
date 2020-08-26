@@ -60,13 +60,17 @@ wxml + wxss + wxs(第一次写没有使用框架)
 
 #### 5.部分截图
 
-发布页  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-b801fe9192f68b97?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+发布页  
+
+![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-b801fe9192f68b97?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
 我的页面
 
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-4ee5d336d47c8f94?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
-分类页  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-8896266b4c0c94b7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+分类页 
+
+![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-8896266b4c0c94b7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
 分类详情
 
