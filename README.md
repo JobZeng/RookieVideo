@@ -61,30 +61,88 @@ wxml + wxss + wxs(第一次写没有使用框架)
 #### 5.部分截图
 
 发布页
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200826204425950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
-le="zoom:67%;" />
+<img src="https://img-blog.csdnimg.cn/20200826204425950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 我的页面
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200826204426407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
+<img src="https://img-blog.csdnimg.cn/20200826204426407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%; " />
 
 分类页
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200826204427693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
+<img src="https://img-blog.csdnimg.cn/20200826204427693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 分类详情
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200826204427889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
+<img src="https://img-blog.csdnimg.cn/20200826204427889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
 
 精选页
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200826204427831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
+<img src="https://img-blog.csdnimg.cn/20200826204427831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
 
 精选详情
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020082620442735.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
+<img src="https://img-blog.csdnimg.cn/2020082620442735.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
 
 社区页
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200826204427727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
+<img src="https://img-blog.csdnimg.cn/20200826204427727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+
+
+社区详情
+
+<img src="https://img-blog.csdnimg.cn/20200826204427233.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
 
 
 社区详情
