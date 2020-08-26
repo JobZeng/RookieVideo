@@ -56,13 +56,8 @@ wxml + wxss + wxs(第一次写没有使用框架)
 体验版二维码，视频类的小程序要企业号才能上线
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200826204903932.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center)
+   
 
-
-<<<<<<< HEAD
-  发布页
-
-   ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-b801fe9192f68b97?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-=======
 #### 5.部分截图
 
 发布页  
@@ -88,11 +83,12 @@ wxml + wxss + wxs(第一次写没有使用框架)
 精选详情
 
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-1519c189c7a9386a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
->>>>>>> ebf0b9749bb1e0884957db54144304cb11391c0f
+
+
 
 社区页
 
-<<<<<<< HEAD
+
   ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-4ee5d336d47c8f94?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   分类页  
