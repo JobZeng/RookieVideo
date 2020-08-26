@@ -1,0 +1,27 @@
+/* pages/publishWorks/publishWorks.wxss */
+.publishWorks{
+  
+  height: 100%;
+  background-color: #b2b2b2;
+}
+.publishWorks .toast {
+  position: absolute;
+  top:calc((100% -160rpx)/2);
+  left: calc((100% - 300rpx)/2);
+  /* margin-top: calc((100% -160rpx)/2); */
+  /* margin-left: calc((100% - 300rpx)/2); */
+  text-align: center;
+  width: 300rpx;
+  height: 160rpx;
+  background-color: #ffffff;
+  
+}
+.toast .pic {
+  border-bottom: 2rpx solid #eeeeee;
+}
+.pic, .video {
+  margin: 0 10rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  display: block;
+}

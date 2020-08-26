@@ -1,0 +1,9 @@
+<!--pages/publishWorks/publishWorks.wxml-->
+<nav-bar navbar-data="{{navbarData}}"></nav-bar>
+
+<view class="publishWorks" style="margin-top:{{height}}px;height:{{windowHeight- height}}px"> 
+  <view class="toast">
+    <text class="pic">发布图片</text>
+    <text class="video">发布视频</text>
+  </view>
+</view>

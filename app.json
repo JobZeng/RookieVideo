@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/publishWorks/publishWorks",
     "pages/index/index",
     "pages/mine/mine",
     "pages/videoDetail/videoDetail",
@@ -9,6 +10,7 @@
     "pages/canvasPoster/canvasPoster",
     "pages/communityDetail/communityDetail",
     "pages/loading/loading"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -31,7 +33,7 @@
       {
         "selectedIconPath": "images/add.png",
         "iconPath": "images/add.png",
-        "pagePath": "pages/logs/logs"
+        "pagePath": "pages/publishWorks/publishWorks"
       },
       {
         "selectedIconPath": "images/mine_press.png",
