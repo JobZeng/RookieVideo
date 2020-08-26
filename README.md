@@ -60,88 +60,36 @@
   #### 5.部分截图
 
   发布页
-  <img src="https://img-blog.csdnimg.cn/20200826204425950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
-  
-  
-  
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+   ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-b801fe9192f68b97?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   我的页面
 
-  <img src="https://img-blog.csdnimg.cn/20200826204426407.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%; " />
+  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-4ee5d336d47c8f94?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
-  分类页
-  <img src="https://img-blog.csdnimg.cn/20200826204427693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+  分类页  
 
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-8896266b4c0c94b7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   分类详情
 
-  <img src="https://img-blog.csdnimg.cn/20200826204427889.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-443b07109b4325c8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   精选页
 
-  <img src="https://img-blog.csdnimg.cn/20200826204427831.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-5e15edae68162fb8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   精选详情
 
-  <img src="https://img-blog.csdnimg.cn/2020082620442735.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-1519c189c7a9386a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   社区页
 
-  <img src="https://img-blog.csdnimg.cn/20200826204427727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
-
+  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-5b4b11664dc060c8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   社区详情
 
-  <img src="https://img-blog.csdnimg.cn/20200826204427233.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2VhZ2xlX3pjbA==,size_16,color_FFFFFF,t_70#pic_center" align="left" alt="在这里插入图片描述" style="zoom:67%;" />
+  ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-cc8d05df344f903f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
 
   #### 6.项目布局
 
