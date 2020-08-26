@@ -1,0 +1,89 @@
+<!--pages/videoList/videoList.wxml-->
+<wxs src="../utils/utils.wxs" module="util" />
+<!-- 首页视频列表 -->
+<view wx:if="{{!model}}" wx:key="index" class="videoList" bindtouchmove="cancelShare"   wx:for="{{videoList}}" wx:for-item="group">
+    <view>
+      <text class="top-title">{{group.title}}</text>
+      <view wx:for="{{group.list}}"  wx:key="index" class="videoList-item" >
+        <!-- 图片展示 点击跳转详情页面 -->
+        <view class="conver-show" bindtap="goDetail" data-list="{{item}}">
+          <image class="cover" src="{{item.data.cover.feed}}"></image>
+          <text class="time">{{util.formatInterval(item.data.duration)}}</text>
+        </view>
+        <!-- 作者模块 跳转作者详情 作者详情和我的模块点击头像跳转的界面差不多 -->
+        <view class="desc" bindtap="goAuthorDetail" data-athour="{{item.data.author}}">
+          <!-- 头像 -->
+          <image class="avatar" src="{{item.data.author.icon}}"></image>
+          <!-- 文字中间 -->
+          <view class="txt">
+            <text class="title">{{item.data.title}}</text>
+            <text class="author">{{item.data.author.name}} / #{{item.data.category}}</text>
+          </view>
+          <!-- 右边分享 -->
+          <icon catchtap="showSharemenu"  class="iconfont icon-share" data-index="{{index}}"></icon>
+          <!-- 图片形式 -->
+          <!-- <image class="share" src="../../images/index.png"></image> -->
+        </view>
+        <!-- 点击分享出现的图层  -->
+        <view class="wechatShare"  wx:if="{{index === currentIndex}}">  
+          <button class="shareBtn" bindtap="previewPoster" data-item="{{item}}">
+            <!-- <icon class="iconfont icon-scan" ></icon>-->
+            <icon wx:if="{{!isShow}}" class="iconfont icon-scan" ></icon>
+            
+            <image class="loading" src="loading.gif" wx:if="{{isShow}}"></image>
+            <text class="shareTxt">生成分享海报</text>
+          </button>
+          <button open-type="share" class="shareBtn">
+            <icon class="iconfont icon-wechat" ></icon>
+            <text class="shareTxt">分享微信好友</text>
+          </button>
+        </view>
+
+      </view>
+    </view>
+    <!-- 画布 -->
+    <canvas canvas-id="canvasPoster" class="canvasPoster" style="height:{{cpHeight}}px">
+    </canvas>
+</view>
+<!-- 其他页面视频列表 -->
+<view wx:if="{{model}}"  class="videoList" bindtouchmove="cancelShare">
+    <view wx:for="{{videoList}}"  wx:key="index" class="videoList-item" >
+      <!-- 图片展示 点击跳转详情页面 -->
+      <view class="conver-show" bindtap="goDetail" data-list="{{item}}">
+        <image class="cover" src="{{item.data.cover.feed}}"></image>
+        <text class="time">{{util.formatInterval(item.data.duration)}}</text>
+      </view>
+      <!-- 作者模块 跳转作者详情 作者详情和我的模块点击头像跳转的界面差不多 -->
+      <view class="desc" bindtap="goAuthorDetail" data-athour="{{item.data.author}}">
+        <!-- 头像 -->
+        <image class="avatar" src="{{item.data.author.icon}}"></image>
+        <!-- 文字中间 -->
+        <view class="txt">
+          <text class="title">{{item.data.title}}</text>
+          <text class="author">{{item.data.author.name}} / #{{item.data.category}}</text>
+        </view>
+        <!-- 右边分享 -->
+        <icon catchtap="showSharemenu"  class="iconfont icon-share" data-index="{{index}}"></icon>
+        <!-- 图片形式 -->
+        <!-- <image class="share" src="../../images/index.png"></image> -->
+      </view>
+      <!-- 点击分享出现的图层  -->
+      <view class="wechatShare"  wx:if="{{index === currentIndex}}">  
+        <button class="shareBtn" bindtap="previewPoster" data-item="{{item}}">
+          <!-- <icon class="iconfont icon-scan" ></icon>-->
+          <icon wx:if="{{!isShow}}" class="iconfont icon-scan" ></icon>
+           
+          <image class="loading" src="loading.gif" wx:if="{{isShow}}"></image>
+          <text class="shareTxt">生成分享海报</text>
+        </button>
+        <button open-type="share" class="shareBtn">
+          <icon class="iconfont icon-wechat" ></icon>
+          <text class="shareTxt">分享微信好友</text>
+        </button>
+      </view>
+
+    </view>
+    <!-- 画布 -->
+    <canvas canvas-id="canvasPoster" class="canvasPoster" style="height:{{cpHeight}}px">
+    </canvas>
+</view>

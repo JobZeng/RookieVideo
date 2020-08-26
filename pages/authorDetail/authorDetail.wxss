@@ -1,0 +1,37 @@
+/* pages/authorDetail/authorDetail.wxss */
+.athour {
+  border: 1px solid #ededed;
+  padding: 20px ;
+  display: flex;
+  justify-content: space-evenly;
+}
+.athour .conver {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+.desc {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.videoNum text {
+  font-size: 12px;
+  display: block;
+}
+.desc .numTxt {
+  color: #999;
+}
+.desc .shortcut {
+  color: #999;
+  font-size: 12px;
+}
+.pick text{
+  font-size: 12px;
+  line-height: 1;
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 6px;
+  border-radius: 6px;
+}

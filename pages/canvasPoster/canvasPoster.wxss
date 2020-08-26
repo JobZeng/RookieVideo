@@ -1,0 +1,7 @@
+/* pages/canvasPoster/canvasPoster.wxss */
+.canvasPoster {
+  width: 100%;
+  /* position: fixed;
+  left: 0;
+  top: 999999rpx;  */
+}

@@ -1,0 +1,86 @@
+/* pages/communityDetail/communityDetail.wxss */
+
+.communityDetail {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  
+}
+.communityItem {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%); 
+  width: 100%; 
+  height: 550rpx;
+
+}
+.communityItem video {
+  width: 100%;
+}
+/* 单个图片容器的样式 */
+.communityItem image {
+  width: 100%;
+ 
+  /* height: 550rpx; */
+}
+.num {
+  padding-top: 30rpx;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+} 
+.athuor{
+  padding: 0 40rpx;
+  position: fixed;
+  bottom: 80rpx;
+  height: 80rpx;
+  color: #fff;
+  height: auto;
+}
+.athuor .nickname {
+  padding-left: 20rpx;
+  vertical-align: top;
+  display: inline-block;
+  
+  height: 40rpx;
+
+}
+.athuor .avatar{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+}
+.athuor text {
+  font-size: 24rpx;
+}
+
+/* 底部 */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80rpx;
+  
+}
+.footer .footer-item {
+  line-height: 80rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.footer .footer-item text {
+  display: inline-block;
+  margin-left: 10rpx;
+  font-size: 24rpx;
+}
+.footer .footer-item .special{
+  font-size: 28rpx;
+}
+.footer .footer-item .txt {
+  margin-top: 1rpx;
+}
+.iconfont {
+  display: inline-block;
+  vertical-align: middle;
+}

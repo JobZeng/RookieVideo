@@ -1,0 +1,62 @@
+/* components/navbar/navbar.wxss */
+/* 顶部要固定定位   标题要居中   自定义按钮和标题要和右边微信原生的胶囊上下对齐 */
+.nav-wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  z-index: 9999999;
+}
+/* 标题要居中 */
+.nav-title {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 28rpx;
+  color: #2c2b2b;
+  font-weight: 600;
+}
+
+.nav-capsule {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  width: 140rpx;
+  justify-content: space-evenly;
+  height: 100%;
+  border: 2rpx solid #e5e5e5;
+  border-radius: 140rpx;
+}
+
+.navbar-v-line {
+  width: 1px;
+  height: 32rpx;
+  background-color: #e5e5e5;
+}
+/* 图标 */
+@font-face {
+  font-family: 'iconfont';  /* project id 1871021 */
+  src: url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.eot');
+  src: url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: 'iconfont'; 
+  font-size: 20px;
+  color: #333;
+}
+
+.icon-back::before {
+  content: '\e60f';
+}
+
+.icon-home::before {
+  content: '\e600';
+}

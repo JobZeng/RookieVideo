@@ -1,0 +1,247 @@
+/**index.wxss**/
+/* tab栏 */
+.tabwrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  background-color: #fff;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #bbb;
+  height: 30px;
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.active {
+  color: #333;
+  position: relative;
+}
+.active::after {
+  content: '';
+  text-align: center;
+  background-color: #333;
+  width: 20rpx;
+  height: 4rpx;
+  position: absolute;
+  bottom: -5rpx;
+  left: 30%;
+}
+
+/* 分类 */
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+}
+.category-item image {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 20rpx;
+}
+
+.category-item text {
+  margin: 15rpx 0;
+  font-size: small;
+}
+.category-item:last-child {
+  margin-bottom: 15rpx;
+}
+
+/* 精选 */
+
+.featured-item {
+  padding: 4% 4% 0;
+  width: 100%;
+  
+}
+.featured-item .conver-show {
+  position: relative;
+}
+.time {
+  color: #fff;
+  position: absolute;
+  padding: 4rpx;
+  bottom: 30rpx;
+  right: 80rpx;
+  z-index: 1;
+  background-color: #333;
+}
+.featured-item .cover{
+  width: 92%;
+  display: inline-block;
+  
+}
+.featured-item .desc {
+  width: 92%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.desc .avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+  border: 1rpx solid #eee;
+}
+.desc .txt {
+  margin-left: 20rpx;
+}
+.desc .title{ 
+  color: #000;
+  font-size: small;
+  display: block;
+  
+}
+.desc .author {
+
+
+  color: #999;
+  font-size: small;
+
+}
+.desc .share {
+  position: absolute;
+  right: 0;
+  width: 30rpx;
+  height: 30rpx;
+}
+/* 社区 */
+.community {
+  padding: 4% 4% 0;
+}
+.communityTop {
+  border-bottom: 2rpx solid #bbb;
+  padding-bottom: 20rpx;
+}
+.communityTop .title {
+  display: block;
+  font-size: larger;
+}
+.communityTop image {
+  width: 100%;
+}
+.communityList {
+  width: 100%;
+  margin-top: 20rpx;
+  /* display: flex;
+  flex-wrap: wrap; */
+
+  
+}
+.communityListItem {
+  display: inline-block;
+  width: 48%;
+  padding-left: 2%; 
+  vertical-align: top;
+  border-radius: 20rpx;
+  overflow: hidden;
+  
+  
+}
+.communityListItem .item {
+  position: relative;
+}
+.imgWrapper {
+  width: 100%;
+  height: 340rpx;
+  overflow: hidden;
+  position: relative;
+  /* border-radius: 20rpx; */
+
+}
+
+.icon-play {
+  font-size: 80rpx;
+  position: absolute; 
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%); 
+  color: #ddd;
+
+}
+.icon-pictures {
+  font-size: 40rpx;
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  color: #ddd;
+
+}
+.communityListItem .cover {
+  width: 100%;
+  margin-bottom: 6rpx;
+  border-radius: 10rpx;
+  height: 100%;
+  border-radius: 16rpx;
+}
+.communityListItem .athour{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.athour .avatar {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 40rpx;
+  vertical-align: top;
+}
+.athour .nickname {
+  max-width: 180rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  vertical-align: top;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-left: 10rpx;
+  color: #666;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.right {
+  position: relative;
+}
+.athour .icon-love {
+  font-size: 24rpx;
+  color: #999;
+  font-weight: bold;
+  position: absolute;
+  top: -10rpx;
+  right: 0;
+}
+.athour .likenum{
+  margin-right: 30rpx;
+  color: #666;
+  height: 40rpx;
+  line-height: 40rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  vertical-align: top;
+}
+.communityListItem  .desc {
+  display: block;
+  font-size: 24rpx;
+  line-height: 1.5;
+  max-height: 144rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #666;
+  margin-bottom: 40rpx;
+}
+
+

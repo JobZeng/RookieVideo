@@ -1,0 +1,7 @@
+<!--pages/canvasPoster/canvasPoster.wxml-->
+
+<canvas canvas-id="canvasPoster" class="canvasPoster" style="height:{{cpHeight}}px">
+  <image src="https://img.kaiyanapp.com/9bd1431e9cbeb7382d22eff37b57d2b3.jpeg?imageMogr2/quality/60/format/jpg"></image>
+</canvas>
+<button bindtap="creatCanvas">生成海报</button>
+

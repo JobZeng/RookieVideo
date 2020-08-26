@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/videoDetail/videoDetail",
+    "pages/logs/logs",
+    "pages/categoryDetail/categoryDetail",
+    "pages/authorDetail/authorDetail",
+    "pages/canvasPoster/canvasPoster",
+    "pages/communityDetail/communityDetail",
+    "pages/loading/loading"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "开眼视频",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#999999",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/index_press.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/add.png",
+        "iconPath": "images/add.png",
+        "pagePath": "pages/logs/logs"
+      },
+      {
+        "selectedIconPath": "images/mine_press.png",
+        "iconPath": "images/mine.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "useExtendedLib": {
+    "weui": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

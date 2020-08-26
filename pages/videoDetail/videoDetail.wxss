@@ -1,0 +1,161 @@
+/* pages/videoDetail/videoDetail.wxss */
+.detail {
+  color: #fff;
+  
+}
+/* 视频播放器 */
+.videoPlayer {
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 100;
+}
+.videoPlayer video {
+  width: 100%;
+}
+/* content 下面 */
+/* 视频介绍 */
+.content {
+  overflow-y: scroll;
+  background-color: #55433f;
+}
+.introduce {
+  padding: 30rpx;
+  border-bottom: 2rpx solid #55433f;
+  font-size: 26rpx;
+}
+.introduce .introduce-title {
+  display: block;
+  font-size: 38rpx;
+}
+.introduce .tag {
+  display: block;
+  color: #e9e6e1;
+  margin: 10rpx 0;
+}
+
+/* .introduce .introduce-desc {
+
+} */
+/* 推荐 */
+
+
+.recommend .loadingText {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 28rpx;
+  height: 500rpx;
+  text-align: center;
+}
+
+.recommend-item {
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.cover {
+  /* width: 45%; */
+  width: 310rpx;
+  height: 180rpx; 
+  border-radius: 10rpx;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  width: 45%;
+  font-size: small;
+}
+.text-title {
+  font-weight: bold;
+  display: block;
+}
+/* 回复内容 */
+
+.reply .reply-top {
+  position: fixed;
+  height: 100rpx;
+  width: 100%;
+  background-color: #332822;
+  font-size: 24rpx;
+  line-height: 100rpx;
+  font-weight: 400;
+}
+.reply-top .plr20 {
+  padding: 0 20rpx;
+}
+.left,.icon-close {
+  display: block;
+}
+
+/* 回复内容 */
+.reply .reply-content {
+  background-color: #55433f;
+  padding-top: 100rpx ;
+}
+.reply-content .reply-item {
+  margin: 0 20rpx;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #5c4b47;
+}
+.reply-item .athour {
+  /* width: 100%; */
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  line-height: 60rpx;
+}
+
+.athour .avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+  vertical-align: middle;
+
+}
+.athour .nickname {
+  font-size: 24rpx;
+  margin-left: 20rpx;
+}
+.athour .num {
+  margin-right: 20rpx;
+  font-size: 24rpx;
+}
+.athour .icon-like {
+  font-size: 30rpx;
+}
+.reply-item  .desc {
+  
+  font-size: 24rpx;
+  margin-left: 70rpx;
+}
+.desc .time {
+  margin-top: 10rpx;
+  display: block;
+  color: #e9e6e1;
+
+}
+/* 底部 */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  background-color: #333;
+  width: 100%;
+  height: 80rpx;
+  
+}
+.footer .footer-item {
+  line-height: 80rpx;
+  font-size: 24rpx;
+}
+.footer-item .shareBtn {
+  background-color: #333;
+  font-size: 24rpx;
+}
+.iconfont {
+  display: inline-block;
+  vertical-align: middle;
+}

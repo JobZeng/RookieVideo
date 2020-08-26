@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "video-list": "../videoList/videoList",
+    "nav-bar": "../../components/navbar/navbar"
+  }
+}

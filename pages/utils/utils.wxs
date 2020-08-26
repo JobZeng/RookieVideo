@@ -1,0 +1,31 @@
+var message = 'hello'
+var formatInterval = function (interval) {
+  var minute = _pad(interval / 60 | 0)
+
+  var second = _pad(interval % 60)
+  return minute + ":" + second 
+}
+// 处理时间
+var _pad = function(num, n = 2){
+  var len = num.toString().length
+  while (len < n) {
+    num = '0' + num
+    len++
+  }
+  return num
+}
+// 处理月日
+var filterDate = function(time) {
+  var replyDate = getDate(time)
+
+  var month = replyDate.getMonth() + 1
+  var day = replyDate.getDate()
+  return month + '月' + day + '日'
+
+}
+
+module.exports = {
+  formatInterval: formatInterval,
+  message: message,
+  filterDate: filterDate
+}

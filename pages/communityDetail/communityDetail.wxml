@@ -1,0 +1,60 @@
+<!--pages/communityDetail/communityDetail.wxml-->
+<nav-bar ></nav-bar>
+<view class="communityDetail" style="margin-top:{{height}}px">
+  <!-- 图片 -->
+  <view class="picture" wx:if="{{type == 'picture'}}" style="height:{{windowHeight - height}}px;"> 
+    <view class="pictureWrapper"> 
+      <view class="communityItem">
+        <image mode="aspectFill" src="{{communityItem.url}}"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 图片集 -->
+   <view class="pictures" wx:if="{{type == 'pictures'}}" style="height:{{windowHeight - height}}px;"> 
+     <!-- 画廊 -->
+     <view  class="galleryWrapper" >
+        <view class="num">
+          <text>{{current + 1}}/{{communityItem.urls.length}}</text>
+        </view>
+        <swiper class="communityItem" bindchange="change"  indicator-dots="{{false}}" bindchange="change" current="0" autoplay="{{false}}" duration="{{500}}">
+          <block wx:for="{{communityItem.urls}}" wx:key="index">
+              <swiper-item>
+              <image mode="aspectFill"  src="{{item}}"></image>
+              </swiper-item>
+          </block>
+        </swiper>
+    </view>
+  </view>
+  <!-- 视频 -->
+  <view class="video" wx:if="{{type == 'video'}}" style="height:{{windowHeight - height}}px;"> 
+    <view class="communityItem">
+      <video src="{{communityItem.playUrl}}"></video>
+    </view>
+  </view>
+  <!-- 作者 -->
+  <view class="athuor">
+   <view >
+      <image class="avatar" src="{{communityItem.owner.avatar}}"></image>
+      <text class="nickname">{{communityItem.owner.nickname}}</text>
+   </view>
+   <view>
+      <text class="desc">{{communityItem.description}}</text>
+   </view>
+
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+      <view class="footer-item ">
+        <icon class="iconfont icon-love"></icon>
+        <text >{{communityItem.consumption.collectionCount}}</text>
+      </view>
+      <view class="footer-item"> 
+        <icon class="iconfont icon-share special"></icon>
+        <text class="txt">{{communityItem.consumption.shareCount}}</text>
+      </view>
+      <view class="footer-item"> 
+        <icon class="iconfont icon-commit"></icon>
+        <text >{{communityItem.consumption.replyCount}}</text>
+      </view>
+  </view> 
+</view>

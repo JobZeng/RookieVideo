@@ -1,0 +1,84 @@
+<!--pages/videoDetail/videoDetail.wxml-->
+<wxs src="../utils/utils.wxs" module="util" />
+<!-- 导航 -->
+<nav-bar></nav-bar>
+<view class="detail">
+  <!-- video -->
+  <view class="videoPlayer" style="height:{{videoHeight}}px;margin-top:{{height}}px">
+    <video id="myVideo" style="height:{{videoHeight}}px" autoplay src="{{videoItem.playUrl}}"></video>
+  </view>
+  <!-- content -->
+  <view class="reply" wx:if="{{isShow}}"  style="margin-top:{{videoHeight + height}}px;margin-bottom:80rpx">
+      <view class="reply-top">
+        <view class="plr20">
+          <text class="left">点击发表你的评论</text>
+          <icon bindtap="closeReply" class="iconfont .icon-close right"></icon>
+        </view>
+      </view>
+      <view class="reply-content">
+        <view wx:for="{{reply}}" class="reply-item">
+          <!-- 作者-->
+          <view class="athour">
+            <view class="athour-left">
+              <image class="avatar" src="{{item.data.user.avatar}}"></image>
+              <text class="nickname">{{item.data.user.nickname}}</text>
+            </view>
+            <view class="athour-right">
+              <text class="num">{{item.data.likeCount}}</text>
+              <icon class="iconfont icon-like "></icon>
+            </view>
+          </view>
+          <!-- 描述-->
+          <view class="desc">
+            <text>{{item.data.message}}</text>
+            <text class="time">{{util.filterDate(item.data.createTime)}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  <view wx:if="{{!isShow}}" class="content" style="margin-top:{{videoHeight + height}}px;margin-bottom:80rpx">
+    <!-- 视频的介绍 -->
+   
+    <view class="introduce">
+      <text class="introduce-title">{{videoItem.title}}</text>
+      <text class="tag">{{videoItem.tag}} / {{util.formatInterval(videoItem.duration)}}</text>
+      <text class="introduce-desc">{{videoItem.desc}}</text>
+    </view>
+    <!-- 推荐 -->
+    <view class="recommend">
+      <!-- 没有内容 -->
+      <view wx:if="{{!recommend.length}}" class="loadingText">
+        <text>暂时没有推荐内容</text>
+      </view>
+      <view wx:for="{{recommend}}" wx:key="data" class="recommend-item" bindtap="toDetail" data-item="{{item}}">
+           <image class="cover" src="{{item.data.cover.feed}}"></image>
+           <view class="text">
+              <text class="text-title">{{item.data.title}}</text>
+              <text class="text-tag">#{{item.data.category}} / {{util.formatInterval(item.data.duration)}}</text>
+           </view>
+      </view>
+
+
+    </view>
+
+
+
+  </view>
+  <!-- 底部 -->
+  <view class="footer">
+    <view class="footer-item ">
+      <view class="iconfont icon-love"></view>
+      喜欢·{{videoItem.likeNum}}
+    </view>
+    <view class="footer-item">
+      <button open-type="share" class="iconfont icon-share shareBtn">
+        分享·{{videoItem.shareNum}}
+      </button>
+      
+    </view>
+    <view class="footer-item" bindtap="showReply">
+      <view  class="iconfont icon-commit"></view>
+      评论·{{videoItem.replyNum}}
+    </view>
+  </view>
+</view>

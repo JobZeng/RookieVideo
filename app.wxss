@@ -1,0 +1,56 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 图标的样式 */
+@font-face {
+  font-family: 'iconfont';  /* project id 1871021 */
+  src: url('//at.alicdn.com/t/font_1871021_lc511oz33gf.eot');
+  src: url('//at.alicdn.com/t/font_1871021_lc511oz33gf.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1871021_lc511oz33gf.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1871021_lc511oz33gf.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1871021_lc511oz33gf.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1871021_lc511oz33gf.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: 'iconfont'; 
+  font-size: 16px;
+  color: #fff;
+}
+
+.icon-love::before {
+  content: '\e602';
+}
+
+.icon-commit::before {
+  content: '\e601';
+}
+
+.icon-share::before {
+  content: '\e6b5';
+}
+
+.icon-play::before {
+  content: '\e645';
+}
+.icon-like::before {
+  content: '\e604';
+}
+.icon-close::before {
+  content: '\e603';
+}
+.icon-pictures::before {
+  content: '\e704';
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

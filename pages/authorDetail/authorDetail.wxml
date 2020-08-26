@@ -1,0 +1,28 @@
+<!--pages/authorDetail/authorDetail.wxml-->
+<nav-bar navbar-data='{{navbarData}}'></nav-bar>
+<view class="athourDetail" style="margin-top:{{height}}px">
+  <view class="athour">
+    <!-- 头像 -->
+    <image class="conver" src="{{authorItem.icon}}"></image>
+    <!-- 中间文字 -->
+    <view class="desc">
+      <!-- 作者名 -->
+      <text>{{authorItem.name}}</text>
+      <!--  -->
+      <view class="shortcut">
+        <text>{{authorItem.description}}</text>
+      </view>
+      <view class="videoNum">
+        <text>{{authorItem.videoNum}}</text>
+        <text class="numTxt">作品数量</text>
+      </view>
+    </view>
+    <!-- 关注 -->
+    <view class="pick">
+      <text>+ 关注</text>
+    </view>
+  </view>
+</view>
+<!-- 视频列表 -->
+<videoList bindtoDetail="toVideoDetail"  videoList="{{videoList}}"></videoList>
+

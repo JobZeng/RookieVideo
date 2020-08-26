@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "video-list": "../videoList/videoList",
+    "nav-bar": "../../components/navbar/navbar",
+    "loading": "../loading/loading"
+
+  },
+  "navigationBarTitleText": "开眼视频"
+}

@@ -1,0 +1,22 @@
+<!--pages/mine.wxml-->
+<!--index.wxml-->
+<!-- 导航 -->
+<nav-bar navbarData="{{navbarData}}"></nav-bar>
+
+<!--  -->
+<view class="mine" style="margin-top:{{height}}px">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="content">
+      <text class="content-text">我的喜欢</text>
+      <text class="content-text">我的评论</text>
+      <text class="content-text">我的关注</text>
+      <text class="content-text">我的作品</text>
+  </view>
+</view>
+

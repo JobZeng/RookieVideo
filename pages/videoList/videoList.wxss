@@ -1,0 +1,121 @@
+/* pages/videoList/videoList.wxss */
+.videoList {
+  padding: 8% 4% 0;
+  width: 100%;
+}
+.top-title {
+  font-size: larger;
+  width: 100%;
+}
+.videoList-item {
+  width: 92%;
+  margin-bottom: 4%;
+  border-bottom: 2rpx solid #eee;
+}
+.videoList-item:last-child {
+  margin-bottom: 0;
+}
+.videoList-item .conver-show {
+  position: relative;
+}
+.time {
+  color: #fff;
+  position: absolute;
+  padding: 4rpx;
+  bottom: 30rpx;
+  right: 20rpx;
+  z-index: 1;
+  background-color: #333;
+  font-size: 24rpx;
+}
+.videoList-item .cover{
+  margin-top: 5rpx;
+  width: 100%;
+  display: inline-block;
+  
+}
+/* desc */
+.videoList-item .desc {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding-bottom: 20rpx;
+  
+}
+.desc .avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+  border: 1rpx solid #eee;
+}
+.desc .txt {
+  margin-left: 20rpx;
+}
+.desc .title{ 
+  color: #000;
+  font-size: small;
+  display: block;
+  
+}
+.desc .author {
+  color: #999;
+  font-size: small;
+
+}
+.desc .iconfont {
+  position: absolute;
+  right: 0;
+}
+/* share */
+.wechatShare {
+  display: flex;
+  text-align: center;
+}
+.wechatShare .shareBtn {
+  background-color: #fff;
+}
+.wechatShare .shareTxt {
+  margin-top: 5px;
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+.shareBtn .loading {
+  width: 20px;
+  height: 25px;
+}
+/* 画布 */
+.canvasPoster {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 999999rpx; 
+
+}
+/* 图标 */
+@font-face {
+  font-family: 'iconfont';  /* project id 1871021 */
+  src: url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.eot');
+  src: url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1871021_0kbrwgbsd2zd.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: 'iconfont'; 
+  font-size: 20px;
+  color: #000;
+}
+
+.icon-share::before {
+  content: '\e6b5';
+}
+.icon-scan::before {
+  content: '\e6d4';
+}
+.icon-wechat::before {
+  content: '\e66d';
+}

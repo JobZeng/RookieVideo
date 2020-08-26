@@ -1,0 +1,119 @@
+<!--index.wxml-->
+<!-- 这里我觉得{{}}不能使用js的代码太难受了 而且wxs 不支持es6 -->
+<nav-bar navbarData="{{navbarData}}"></nav-bar>
+<view class="index" >
+  <!-- tab切换 -->
+  <view class="tabwrapper" style="top:{{height}}px">
+    <view class="tab" >
+      <view class="tab-list {{currentIndex==0 ? 'active' : ''}}" data-current="0" bindtap="switchItem">分类</view>
+      <view class="tab-list {{currentIndex==1 ? 'active' : ''}}" data-current="1" bindtap="switchItem">精选</view>
+      <view class="tab-list {{currentIndex==2 ? 'active' : ''}}" data-current="2" bindtap="switchItem">社区</view>
+    </view>
+  </view>
+  <!-- 搜索模块 -->
+  <view class="search"></view>
+  <!-- 内容区域 -->
+  <view class="contentwraper" style="margin-top:{{height+30}}px">
+    <!-- 分类模块 -->
+    <scroll-view wx:if="{{currentIndex == 0}}" style="height:{{scrollWidth - height - 30}}px" scroll-y="true">
+      <view class="category"  >
+        <view wx:key="category" wx:for="{{categories}}" class="category-item">
+          <image lazy-load bindtap="toCategoryDetail"  data-list="{{item}}" src="{{item.bgPicture}}"></image>
+          <text>#{{item.name}}</text>
+        </view>
+      </view>
+      <loading wx:if="{{!categories}}"></loading>
+    </scroll-view>  
+    <!-- 精选内容 -->
+    <scroll-view bindscrolltolower="refreshFeatured" scroll-y="true" wx:if="{{currentIndex == 1}}" style="height:{{scrollWidth - height - 30}}px">
+      <!-- <video-list   bindtoDetail="toVideoDetail" model="{{flase}}" videoList="{{featured}}"></video-list> -->
+      <video-list bindtoDetail="toVideoDetail"  videoList="{{featured}}" model="{{flase}}"></video-list>
+      <loading wx:if="{{!featured}}"></loading>
+
+    </scroll-view>
+
+    <!-- 社区模块 -->
+    <scroll-view bindscrolltolower="refreshCommunity" scroll-y="true" wx:if="{{currentIndex == 2}}" style="height:{{scrollWidth - height - 30}}px">
+      <view class="community" >
+        <!-- 顶部 -->
+        <view class="communityTop" >
+          <text class="title" >社区活动</text>
+          <image lazy-load src="{{communityImgUrl}}"></image>
+        </view>
+        <!-- 列表 -->
+        <view class="communityList">
+          <!-- 左边 -->
+          <view class="communityListItem">
+            <view  wx:if="{{index % 2 == 0}}" wx:for="{{community}}" wx:key="id" bindtap="toCommunityDetail" data-content="{{item.data.content}}">
+                <view class="imgWrapper">
+                  <view class="types">
+                    <icon wx:if="{{item.data.content.type == 'video'}}"  class="iconfont icon-play"></icon>
+                    <icon wx:if="{{item.data.content.data.urls.length > 1}}" class="iconfont icon-pictures"></icon>
+                  </view>
+                  <image bindload="imageLoading" lazy-load mode="aspectFill" class="cover"  src= "{{item.data.content.data.cover.feed}}" ></image>
+                </view>
+               
+              <!-- 作者 -->
+              <view class="athour">
+                <!-- 左边 -->
+                <view class="left">
+                  <!-- 作者头像 -->
+                  <image class="avatar" src="{{item.data.content.data.owner.avatar}}"></image>
+                  <!-- 作者名称 -->
+                  <text class="nickname">{{item.data.content.data.owner.nickname}}</text>
+                </view>
+                <!-- 右边 -->
+                <view class="right">
+                  <!-- 喜欢数量 -->
+                  <text class="likenum">{{item.data.content.data.consumption.collectionCount}}</text>
+                  <icon class="iconfont icon-love"></icon>
+                </view>
+              
+              </view>
+              <!-- 描述 -->
+              <text  class="desc">{{item.data.content.data.description}}</text>
+
+            </view>
+          </view>
+          <!-- 右边 -->
+          <view class="communityListItem">
+            <view  wx:if="{{index % 2 != 0}}"  wx:for="{{community}}" wx:key="id" bindtap="toCommunityDetail" data-content="{{item.data.content}}">
+              <view class="imgWrapper">
+                  <view class="types">
+                    <icon wx:if="{{item.data.content.type == 'video'}}"  class="iconfont icon-play"></icon>
+                    <icon wx:if="{{item.data.content.data.urls.length > 1}}" class="iconfont icon-pictures"></icon>
+                  </view>
+                  <image lazy-load mode="aspectFill" class="cover"  src= "{{item.data.content.data.cover.feed}}" ></image>
+              </view>
+              
+              <!-- 作者 -->
+              <view class="athour">
+                <!-- 左边 -->
+                <view class="left">
+                  <!-- 作者头像 -->
+                  <image class="avatar" src="{{item.data.content.data.owner.avatar}}"></image>
+                  <!-- 作者名称 -->
+                  <text class="nickname">{{item.data.content.data.owner.nickname}}</text>
+                </view>
+                <!-- 右边 -->
+                <view class="right">
+                  <!-- 喜欢数量 -->
+                  <text class="likenum">{{item.data.content.data.consumption.collectionCount}}</text>
+                  <icon class="iconfont icon-love"></icon>
+                </view>
+              
+              </view>
+              <!-- 描述 -->
+              <text  class="desc">{{item.data.content.data.description}}</text>
+            
+            </view>
+          </view>
+        </view>
+
+      </view>
+      <loading wx:if="{{isShow}}"></loading>
+      
+    </scroll-view>
+
+  </view>
+</view>

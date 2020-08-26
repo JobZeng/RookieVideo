@@ -1,0 +1,20 @@
+<!--pages/categoryDetail/categoryDetail.wxml-->
+<nav-bar navbar-data="{{navbarData}}"></nav-bar>
+<view class="categoryDetail" style="margin-top:{{height}}px">
+  <!-- 上面的部分 -->
+  <view class="introduce-wrapper" style="background-image:url({{categoryItem.headerImage}})">
+    <view class="introduce" >
+        <!-- 介绍 -->
+        <view class="introduce-content">
+          <text class="name">{{categoryItem.name}}</text>
+          <text>{{categoryItem.description}}</text>
+        </view>
+        <!-- 关注 -->
+        <view class="pick">
+          <text class="pick-txt">+ 关注</text>
+        </view>
+    </view>
+  </view>
+  <!-- 视频列表 -->
+  <video-list bindtoDetail="toVideoDetail"  videoList="{{videoList}}"></video-list>
+</view>

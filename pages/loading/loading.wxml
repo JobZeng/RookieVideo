@@ -1,0 +1,4 @@
+<!--pages/loading/loading.wxml-->
+<view class="loading">
+  <image class="ima" src="loading.gif"></image>
+</view>

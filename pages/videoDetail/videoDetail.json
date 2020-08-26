@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "nav-bar": "../../components/navbar/navbar",
+    "loading": "../loading/loading"
+
+  }
+}
