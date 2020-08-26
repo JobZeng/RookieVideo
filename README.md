@@ -61,37 +61,21 @@ wxml + wxss + wxs(第一次写没有使用框架)
 #### 5.部分截图
 
 发布页  
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-b801fe9192f68b97?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 我的页面
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-4ee5d336d47c8f94?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 分类页 
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-8896266b4c0c94b7?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 分类详情
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-443b07109b4325c8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 精选页
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-5e15edae68162fb8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 精选详情
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-1519c189c7a9386a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 社区页
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-5b4b11664dc060c8?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 社区详情
-
 ![在这里插入图片描述](https://upload-images.jianshu.io/upload_images/12649663-cc8d05df344f903f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
-
 
 #### 6.项目布局
 
